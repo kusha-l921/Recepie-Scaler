@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Scaler</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Recipe Scaler</h1>
+    <form action="/scale" method="post">
+        <label>Original Servings:</label>
+        <input type="number" name="original_servings" required><br><br>
+        
+        <label>Desired Servings:</label>
+        <input type="number" name="desired_servings" required><br><br>
+        
+        <label>Ingredients (one per line):</label><br>
+        <textarea name="ingredients" rows="10" cols="50" placeholder="1 cup sugar&#10;2 1/2 cups flour" required></textarea><br><br>
+        
+        <button type="submit">Scale Recipe</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scaled Recipe</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Scaled Recipe</h1>
+    <ul>
+        {% for line in scaled_lines %}
+            <li>{{ line }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Scale another recipe</a>
+</body>
+</html>
